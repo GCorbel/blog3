@@ -49,9 +49,11 @@ title: Guirec Corbel - Mon Blog | My Blog
               <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Articles en Français <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
+                  {% for post in site.posts %}
+                    <li>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
                 </ul>
               </li>
               <li class="dropdown">
