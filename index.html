@@ -1,8 +1,11 @@
+---
+title: Guirec Corbel - Mon Blog | My Blog
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Guirec Corbel - Mon Blog | My Blog</title>
+    <title>{{page.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -71,38 +74,8 @@
       <div class="row">
         <div class="span12">
           <div class="well">
-            <h1>When I use Helpers, Partials, Presenters and Decorators</h1>
-            <p>There is some differents ways to have a better organization of your views. Partials and helpers are the standard methods. There is also Presenters and Decorators. It can be a little bit confusing to know how and when to use it.</p>
-
-            <h2>My organization</h2>
-
-            <p>Every technics can have his own utility.</p>
-
-            <h2>Helpers</h2>
-
-            <p>Helpers are generic methods which can be use for different kind of objects. I create this kind of helpers <code style="overflow-y: hidden;">link_to_update</code>, <code style="overflow-y: hidden;">big_image</code>, <code style="overflow-y: hidden;">styled_form</code>, etc. Those methods create an html code with a css style or a standard text for example.</p>
-
-            <h2>Partials</h2>
-
-            <p>Partials are used to split a big view into smaller logic parts and for larger html code. I can have a partial <code style="overflow-y: hidden;">side_menu</code>, <code style="overflow-y: hidden;">comment_list</code>, <code style="overflow-y: hidden;">header</code>, etc.</p>
-
-            <h2>Presenters</h2>
-
-            <p>Presenters is for more complicated queries with two or more models. I have some partials like <code style="overflow-y: hidden;">@page_presenter.page_in_category(ruby_category)</code> or <code style="overflow-y: hidden;">@user_presenter.user_following(an_article)</code>.</p>
-
-            <h2>Decorators</h2>
-
-            <p>Decorators should act with only one model and shouldn't take parameters (if it's possible). I can do something like this <code style="overflow-y: hidden;">user.full_name</code>, <code style="overflow-y: hidden;">page.big_title</code> or <code style="overflow-y: hidden;">category.permalink</code>. I use the gem <a href="https://github.com/drapergem/draper">Draper</a>.</p>
-
-            <p>If I search many models, I do not access to the model class in the view. I use the draper's function <a href="https://github.com/drapergem/draper#decorated-finders">decorates_finders</a>.</p>
-
-            <h2>Conclusion</h2>
-
-            <p>There may be a better solution but it's for me. If you have a better solution, please, let me know.</p>
-
-            <p>I have only one thing which I don't like for presenters. I don't like to instanciate an object in the controller and to pass it into the view. It does not respect the <a href="http://robots.thoughtbot.com/post/50655960596/sandi-metz-rules-for-developers">Sandi Metz's rules</a>. Every rules can be broken with a good reason...</p>
-
-            </div>
+            {{ content }}
+          </div>
         </div>
       </div>
     </div> <!-- /container -->
