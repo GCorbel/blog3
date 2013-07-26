@@ -46,7 +46,7 @@
               <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Articles en Français <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  {% for post in site.french.posts %}
+                  {% for post in site.categories.french.posts %}
                     <li>
                       <a href="{{site.base_path }}{{ post.url }}">{{ post.title }}</a>
                     </li>
@@ -56,7 +56,7 @@
               <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">English Articles <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  {% for post in site.english.posts %}
+                  {% for post in site.categories.english.posts %}
                     <li>
                       <a href="{{site.base_path }}{{ post.url }}">{{ post.title }}</a>
                     </li>
