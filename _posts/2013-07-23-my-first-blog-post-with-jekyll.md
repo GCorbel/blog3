@@ -1,2 +1,6 @@
-Hourra, This is my first blog post!
+---
+title: Hourra, This is my first blog post!
+---
+
+{{title}}
 -----------------------------------
