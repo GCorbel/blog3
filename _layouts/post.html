@@ -83,7 +83,7 @@
         <div class="panel-heading">
           <h3 class="panel-title">{{ post.title }}</h3>
         </div>
-        <p>Date : {{page.date}}</p>
+        <p>Date : {{ page.date | date: "%d %B %Y" }}</p>
         <p>Permalink : {{post.permalink}}</p>
         {{ content }}
       </div>
