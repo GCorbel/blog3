@@ -73,7 +73,7 @@
           Date : {{page.date}}
         </div>
         <div class="col-lg-4">
-          Permalink : {{post.permalink}}
+          Permalink : {{page.permalink}}
         </div>
         <div class="col-lg-4">
           <a href="https://twitter.com/share" class="twitter-share-button" data-via="ConceptKorrigan" data-lang="fr">Tweeter</a>
@@ -81,10 +81,8 @@
       </div>
       <div class="row panel">
         <div class="panel-heading">
-          <h3 class="panel-title">{{ post.title }}</h3>
+          <h3 class="panel-title">{{ page.title }}</h3>
         </div>
-        <p>Date : {{ page.date | date: "%d %B %Y" }}</p>
-        <p>Permalink : {{post.permalink}}</p>
         {{ content }}
       </div>
 
