@@ -70,7 +70,7 @@
     <div class="container">
       <div class="row panel">
         <div class="col-lg-4">
-          Date : {{page.date}}
+          Date : {{ page.date | date: "%d %B %Y" }}
         </div>
         <div class="col-lg-4">
           Permalink : {{page.permalink}}
