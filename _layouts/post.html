@@ -68,29 +68,34 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="span12">
+      <div class="row panel">
+        <div class="col-lg-4">
+          Date : {{page.date}}
+        </div>
+        <div class="col-lg-4">
+          Permalink : {{post.permalink}}
+        </div>
+        <div class="col-lg-4">
           <a href="https://twitter.com/share" class="twitter-share-button" data-via="ConceptKorrigan" data-lang="fr">Tweeter</a>
         </div>
       </div>
-      <div class="row">
-        <div class="span12">
-          <div class="well">
-            <p>Date : {{page.date}}</p>
-            <p>Permalink : {{post.permalink}}</p>
-            {{ content }}
-          </div>
+      <div class="row panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ post.title }}</h3>
         </div>
+        <p>Date : {{page.date}}</p>
+        <p>Permalink : {{post.permalink}}</p>
+        {{ content }}
       </div>
-      <div class="row">
-        <div class="span12">
-          <div class="well">
-            {% if page.comments %}
-              <div id="disqus_thread"></div>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            {% endif %}
-          </div>
+
+      <div class="row panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Comments</h3>
         </div>
+        {% if page.comments %}
+          <div id="disqus_thread"></div>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        {% endif %}
       </div>
     </div> <!-- /container -->
 
