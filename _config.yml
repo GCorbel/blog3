@@ -1,5 +1,5 @@
 safe: true
 lsi: false
 pygments: true
-home_path: '/blog/'
-base_path: '/blog/'
+home_path: '/blog'
+base_path: '/blog'
