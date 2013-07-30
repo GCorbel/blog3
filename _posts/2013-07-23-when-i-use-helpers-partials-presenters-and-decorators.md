@@ -20,7 +20,7 @@ Helpers are generic methods which can be use for different kind of objects. I cr
 Partials
 -------
 
-Partials are used to split a big view into smaller logic parts and for larger html code. I can have a partial `side_menu`, `comment_list`, `header`, etc.
+Partials are used to split a big view into smaller logic parts. I can have a partial `side_menu`, `comment_list`, `header`, etc.
 
 Presenters
 ----------
@@ -35,6 +35,6 @@ If I search many models, I do not access to the model class in the view. I use t
 
 Conclusion
 ----------
-There may be a better solution but it's for me. If you have a better solution, please, let me know.
+There may be a better solution but it works for me. If you have a better solution, please, let me know.
 
 I have only one thing which I don't like for presenters. I don't like to instanciate an object in the controller and to pass it into the view. It does not respect the [Sandi Metz's rules](http://robots.thoughtbot.com/post/50655960596/sandi-metz-rules-for-developers). Every rules can be broken with a good reason...
