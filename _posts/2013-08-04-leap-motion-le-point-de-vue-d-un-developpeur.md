@@ -7,6 +7,8 @@ comments: true
 
 La semaine dernière, la société [Optik 360](http://www.optik360.com/), spécialisée en photo 360 degrés, m'a demandé de tester Leap Motion en faisant une application permettant de visionner des images panoramiques. L'image devait se déplacer en fonction des mouvements fait par l'utilisateur.
 
+Pour ceux qui ne connaissent pas encore Leap Motion. Il s'agit d'un petit contrôleur d'environ 8 centimètres. Pour plus d'informations, rendez-vous sur [leur site officiel](https://www.leapmotion.com/).
+
 Phase 1 : Installation
 ----------------------
 
@@ -126,7 +128,7 @@ Là où j'ai des doutes
 
 Petit bémol pour la documentation. Je trouve que la documentation officiel est assez peu détaillée. Il y a peu de code affiché. Pour voir du code réel, il est nécessaire de rechercher les exemples disponibles sur GitHub.
 
-Au niveau de la reconnaissance des mouvements, il existe trois mouvement "de base", Circle, Swipe et Tap. Ajouter d'autres mouvement est beaucoup plus complexe. On ne peut pas imaginer faire un jeu comme Black & White pour le moment.
+Au niveau de la reconnaissance des mouvements, il existe trois mouvement "de base", Circle, Swipe et Tap. Ajouter d'autres mouvement est beaucoup plus complexe. On ne peut pas imaginer faire un jeu comme [Black & White](http://fr.wikipedia.org/wiki/Black_and_White_%28jeu_vid%C3%A9o%29) pour le moment.
 
 Le gros point faible est la précision. Le nombre de doigts détectés n'est pas toujours réel et la position est approximative. Quand on y pense, c'est normal. Si l'on pointe une image vers l'écran, notre doigt tremble. Viser une icône peut être très long. Leap Motion ne n'est pas prêt à remplacer la souris.
 
