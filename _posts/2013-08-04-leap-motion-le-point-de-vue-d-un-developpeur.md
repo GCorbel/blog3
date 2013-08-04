@@ -7,7 +7,7 @@ comments: true
 
 La semaine dernière, la société [Optik 360](http://www.optik360.com/), spécialisée en photo 360 degrés, m'a demandé de tester Leap Motion en faisant une application permettant de visionner des images panoramiques. L'image devait se déplacer en fonction des mouvements fait par l'utilisateur.
 
-Pour ceux qui ne connaissent pas encore Leap Motion. Il s'agit d'un petit contrôleur d'environ 8 centimètres. Pour plus d'informations, rendez-vous sur [leur site officiel](https://www.leapmotion.com/).
+Pour ceux qui ne connaissent pas encore Leap Motion. Il s'agit d'un petit capteur de mouvement d'environ 8 centimètres. Pour plus d'informations, rendez-vous sur [leur site officiel](https://www.leapmotion.com/).
 
 Phase 1 : Installation
 ----------------------
