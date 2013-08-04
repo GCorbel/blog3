@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leap Motion : Le point de vue d'un développeur
+title: "Leap Motion : Le point de vue d'un développeur"
 category: french
 comments: true
 ---
