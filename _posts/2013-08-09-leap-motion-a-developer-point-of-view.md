@@ -9,7 +9,7 @@ Last week, the company, [Optik 360](http://www.optik360.com/), specialized in 36
 
 For those who don't know yet Leap Motion. It is a small motion sensor about eight centimeters. For more information, visit [their official website](https://www.leapmotion.com/).
 
-Before to continue, *I'm not english-speaking*. I probably did a lot of mistakes in there article.  I you want to correct my mistakes, you can change the text here and do a pull request.
+Before to continue, *I'm not english-speaking*. I probably did a lot of mistakes in this article. If you want to correct my mistakes, you can change the text [here](https://github.com/GCorbel/blog/blob/gh-pages/_posts/2013-08-09-leap-motion-a-developer-point-of-view.md) and do a pull request. Thanks!
 
 Step 1 : Installation
 ---------------------
