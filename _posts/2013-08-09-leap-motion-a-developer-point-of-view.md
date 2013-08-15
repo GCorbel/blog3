@@ -7,9 +7,9 @@ comments: true
 
 Last week, the company [Optik 360](http://www.optik360.com/), specialized in 360 degrees pictures, asked me to test Leap Motion by creating an application to view panoramic images. The image would move according to the movements made by the user.
 
-For those who don't know yet Leap Motion, it is a small motion sensor about eight centimeters. For more information, visit [their official website](https://www.leapmotion.com/).
+For those who don't know Leap Motion yet, it is a small motion sensor about eight centimeters. For more information, visit [their official website](https://www.leapmotion.com/).
 
-Please note *I'm not a native english-speaker*. I probably did a lot of mistakes in this article. If you want to correct my mistakes, you can change the text [here](https://github.com/GCorbel/blog/blob/gh-pages/_posts/2013-08-09-leap-motion-a-developer-point-of-view.md) and do a pull request. Thanks!
+Please note *I'm not a native english-speaker*. I probably did a lot of mistakes in this article. If you want to correct then, you can change the text [here](https://github.com/GCorbel/blog/blob/gh-pages/_posts/2013-08-09-leap-motion-a-developer-point-of-view.md) and do a pull request. Thanks!
 
 Step 1 : Installation
 ---------------------
@@ -120,7 +120,7 @@ if(@frame.gestures.length > 0)
 
 Again, it's very simple. `@frame.gestures` returns a list of detected movements. Thereafter, the code checks if the type of movement is a circle. If this is the case, the image is changed.
 
-To recognized the movements, it is necessary to call the function `Leap.loop` like this :
+To recognize the movements, you have to call the function `Leap.loop` like this :
 
 {% highlight coffeescript %}
 Leap.loop({enableGestures: true}, function(frame) {
@@ -128,23 +128,28 @@ Leap.loop({enableGestures: true}, function(frame) {
 })
 {% endhighlight %}
 
-And voila! Everything works. As a good Open-Source contributor, I posted the code here : [https://github.com/GCorbel/LeapPano](https://github.com/GCorbel/LeapPano). I also created a page with [GitHub-Pages](http://pages.github.com/) visible here : [http://gcorbel.github.io/LeapPano/](http://gcorbel.github.io/LeapPano/).
+And... voila! Everything works.
+As a good Open-Source contributor, I posted the code here : [https://github.com/GCorbel/LeapPano](https://github.com/GCorbel/LeapPano).
+I also created a page with [GitHub-Pages](http://pages.github.com/) visible here : [http://gcorbel.github.io/LeapPano/](http://gcorbel.github.io/LeapPano/).
 
 What I like Leap Motion
 -----------------------
 
-First, I loved the ease of installation. It's really Plug and Play. The development is extremely easy. The API is provided as simple as possible. The availability in few languages is awesome. I'm really impressed with the opportunities provided and simplicity.
+First, I loved the ease of installation. It's really Plug and Play. The development is extremely easy. The provided API is as simple as possible, and its availability in few languages is awesome. I'm really impressed with the opportunities provided and ease of use.
 
 Where I have some doubts
 ------------------------
 
-Small flat for documentation. I think the documentation is not very detailed. There is a little code displayed. To see the actual code, it's necessary to look the examples available on GitHub.
+Small flat for documentation. I think the documentation is not very detailed. There is a little code displayed. To see the actual code, you have to look the examples available on GitHub.
 
-At the motion recognition, there are three basic movements, Circle, Swipe and Tap. To add movement is much complex. I cannot imagine a game like [Black & White](http://en.wikipedia.org/wiki/Black_%26_White_%28video_game%29) for the moment.
+At the motion recognition, there are three basic movements: Circle, Swipe and Tap.
+To add a different gesture is much complex. I cannot imagine a game like [Black & White](http://en.wikipedia.org/wiki/Black_%26_White_%28video_game%29) at the moment.
 
-The weak point is the accuracy. The number of detected fingers is not always real and the position is approximate. When you think about it, this is normal. If you point an image to the screen, your finger is shaking. Targeting a small icon can be very long. Leap Motion is not ready to replace the mouse.
+The weak point is the accuracy. The number of detected fingers is not always real and the position is approximate.
+When you think about it, this is normal: if you point an image to the screen, your finger is shaking.
+Targeting a small icon can be very long. Leap Motion is not ready to replace the mouse.
 
-In addition, I find the tool detection is very hazardous. A pencil pass from detected to undetected without reason. Finger detection is much more stable.
+In addition, I find the tool detection is very random. A pencil goes from detected to undetected without reason. Finger detection is much more stable.
 
 Actually, the Leap Motion's version is 0.8. This is a brand new system. We just imagine that the system will be improved over time.
 
@@ -153,4 +158,7 @@ Conclusion
 
 I love Leap Motion!
 
-The future as imagined in the 80s/90s is our worn. We are not yet able to make screen as in Minority Report, but you get approach. Technologies such as Leap, Google Voice, Google glaces, home automation, etc. are dreaming. The future is open to any developers. We can do impressive things.
+The future as imagined in the 80s/90s is starting to feel real.
+We are not yet able to make screen as in Minority Report, but we're getting closer.
+Technologies such as Leap, Google Voice, Google Glass, home automation, etc. are dreams coming to reality.
+The future is open to any developers. We can do impressive things.
